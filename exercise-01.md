@@ -1,5 +1,5 @@
-# tutorials
-Basic exercises in R
+# Basic exercises in R
+
 
 
 1. Write a program to print "Hello, World!" on the console.
