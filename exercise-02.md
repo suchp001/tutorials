@@ -1,4 +1,6 @@
-Exercises focused on handling tables in the tidyverse package
+# Tidyverse
+
+## Exercises focused on handling tables in the tidyverse package
 
 
 1. Load the tidyverse package and import the "mtcars" dataset.
@@ -23,10 +25,7 @@ Exercises focused on handling tables in the tidyverse package
 
 
 
-
-
-
-Solutions
+# Solutions
 
 
 1. Load the tidyverse package and import the "mtcars" dataset.
