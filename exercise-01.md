@@ -155,5 +155,3 @@ guessing_game <- function() {
 # Run the game
 guessing_game()
 ```
-
-These are the solutions to the exercises. Feel free to ask if you have any questions or need further explanation!
