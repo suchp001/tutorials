@@ -1,6 +1,6 @@
 # Basic exercises in R
 
-
+## Exercises
 
 1. Write a program to print "Hello, World!" on the console.
 
@@ -26,10 +26,7 @@
 
 
 
-
-
-Certainly! Here are the answers to the exercises:
-
+## Solutions
 1. Exercise:
 ```R
 # Solution:
