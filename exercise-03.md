@@ -1,4 +1,4 @@
-# Working with Qiime output
+# Working with Qiime2 output
 
 ## Exercises
 1. Load the necessary packages in R, including the `tidyverse` and `tidyqiime` packages.
