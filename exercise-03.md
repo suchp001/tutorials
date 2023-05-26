@@ -14,7 +14,7 @@
 
 
 ## Solutions
-1. Load the necessary packages in R, including the `tidyverse` and `tidyqiime` packages.
+1. Load the necessary packages in R, including the `tidyverse` package.
 ```R
 library(tidyverse)
 ```
