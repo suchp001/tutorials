@@ -1,7 +1,7 @@
 # Working with Qiime2 output
 
 ## Exercises
-1. Load the necessary packages in R, including the `tidyverse` and `tidyqiime` packages.
+1. Load the necessary packages in R, including the `tidyverse` package.
 2. Read the QIIME taxa table file, named "taxa_table.txt", into a tibble.
 3. Display the first 5 rows of the taxa table.
 4. Filter the taxa table to include only the rows where the "Kingdom" column is "Bacteria".
@@ -17,7 +17,6 @@
 1. Load the necessary packages in R, including the `tidyverse` and `tidyqiime` packages.
 ```R
 library(tidyverse)
-library(tidyqiime)
 ```
 
 2. Read the QIIME taxa table file, named "taxa_table.txt", into a tibble.
