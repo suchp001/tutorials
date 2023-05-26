@@ -20,8 +20,6 @@
 
 9. Create a bar plot to visualize the frequency distribution of a categorical variable in a data frame.
 
-11. Implement a simple guessing game where the user tries to guess a randomly generated number between 1 and 10. Provide feedback if the guess is too high or too low, and congratulate the user when they guess the correct number.
-
 
 
 
@@ -127,31 +125,16 @@ data <- data.frame(
 barplot(table(data$Category))
 ```
 
-10. Exercise:
-```R
-# Solution:
-guessing_game <- function() {
-  answer <- sample(1:10, 1)
-  attempts <- 0
-  
-  while (TRUE) {
-    guess <- as.integer(readline("Enter your guess (between 1 and 10): "))
-    
-    if (guess < answer) {
-      print("Too low!")
-    } else if (guess > answer) {
-      print("Too high!")
-    } else {
-      print("Congratulations! You guessed the correct number.")
-      break
-    }
-    
-    attempts <- attempts + 1
-  }
-  
-  print(paste("Total attempts:", attempts))
-}
 
-# Run the game
-guessing_game()
-```
+## Explaination
+
+Exercise 3. The condition if (n %% i == 0) checks if n is divisible by the current value of i without a remainder (%% is the modulus operator in R).
+
+Exercise 5. If the condition in the if statement is not met, the function proceeds to the next line return(n * factorial(n-1)). This line recursively calls the factorial function itself, passing n-1 as the argument. This is where the recursive nature of the function comes into play. In each recursive call, the function calculates the factorial of the number n-1 and multiplies it by n. This process continues until the base case is reached (when n becomes less than or equal to 1).
+
+Exercise 8. **table(numbers)** generates a frequency table for the variable numbers. It counts the occurrences of each unique value in the numbers object and returns a table with the values as the names and the frequencies as the counts.
+**max(table(numbers))** finds the maximum frequency in the table generated in the previous step. It determines the highest count among all the values in the numbers object.
+**table(numbers) == max(table(numbers))** compares each count in the table with the maximum frequency. It creates a logical vector with TRUE for the counts that match the maximum frequency and FALSE for the rest.
+**names(table(numbers))[table(numbers) == max(table(numbers))]** extracts the names from the table where the counts match the maximum frequency. It retrieves the values that correspond to the TRUE elements in the logical vector obtained in the previous step.
+**as.numeric(...)** converts the extracted names into numeric values. This step ensures that the result is in a numeric format, allowing for further mathematical operations if needed.
+
