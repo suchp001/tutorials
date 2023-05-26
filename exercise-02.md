@@ -19,9 +19,6 @@
 
 8. Create a summary table that shows the count and average miles per gallon (mpg) for each unique combination of cylinders (cyl) and gears (gear).
 
-9. Perform an inner join between the "mtcars" dataset and the "iris" dataset based on a common variable. Choose any common variable of your choice.
-
-10. Create a new table that shows the top 3 cars with the highest miles per gallon (mpg) from the "mtcars" dataset, including their respective model names.
 
 
 
@@ -92,20 +89,4 @@ original_data <- reshaped_data %>%
 summary_table <- mtcars %>%
   group_by(cyl, gear) %>%
   summarize(count = n(), avg_mpg = mean(mpg))
-```
-
-9. Perform an inner join between the "mtcars" dataset and the "iris" dataset based on a common variable. Choose any common variable of your choice.
-
-```R
-# Solution:
-joined_data <- inner_join(mtcars, iris, by = "cyl")  # Example: Joining based on "cyl"
-```
-
-10. Create a new table that shows the top 3 cars with the highest miles per gallon (mpg) from the "mtcars" dataset, including their respective model names.
-
-```R
-# Solution:
-top_cars <- mtcars %>%
-  top_n(3, mpg) %>%
-  select(model = row.names(.), mpg)
 ```
