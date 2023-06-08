@@ -17,6 +17,16 @@ conda activate tutorial
 fastqc *.fastq.gz -o /home/intern/ocean/fastqc
 ```
 
-4. Downdoal the fastqc results (html files) and find out if they require trimming
+4. install MultiQC
+```r
+pip install multiqc
+```
+
+5. Go inside the folder where fastqc.html files are present and execute multiqc. Use multiqc --help to understand the symtax. 
+```r
+multiqc -f -o /home/intern/keerthana/fastqc-PRJNA508851/multiqc /home/intern/keerthana/fastqc-PRJNA508851/
+```
+
+6. Explore the result of multiqc (html files) and find out if these samples contain adapters
 
 
